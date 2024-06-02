@@ -14,6 +14,7 @@ public class TaskController {
     private ITaskRepository taskRepository;
     @PostMapping("/")
     public TaskMoldel create(@RequestBody TaskMoldel taskMoldel){
+        System.out.println("Controller");
         var task= this.taskRepository.save(taskMoldel);
         return task;
     }
