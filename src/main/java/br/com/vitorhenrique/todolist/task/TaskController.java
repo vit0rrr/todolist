@@ -60,6 +60,7 @@ public class TaskController {
             .body("Tarefa não encontrada");
         }
 
+        
         var idUser = request.getAttribute("idUser");
 
         if(!task.getIdUser().equals(idUser)){
